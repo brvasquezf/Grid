@@ -1,0 +1,98 @@
+/******************************************************************************************************************************************/
+
+/* Body */
+
+body{
+    background-color: lightgray;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "menu main"
+      "footer footer";
+    
+  }
+
+/******************************************************************************************************************************************/
+
+/* Header */
+
+header {
+  grid-area: header;
+  background-color: darkslateblue;
+  color: white;
+  display: grid;
+  justify-content: center;
+
+}
+
+/******************************************************************************************************************************************/
+
+/* Menu */
+
+menu {
+  grid-area: menu;
+  width: 13vw;
+  height: 88vh;
+  margin: 0;
+  gap: 10px;
+}
+
+.box_categorias{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 3vh;
+    
+}
+
+.box_categorias a{
+    
+    text-decoration: none;
+    color: black;
+    padding-right: 3%;
+}
+
+.box_categorias  p{
+    color: gray;
+}
+
+/******************************************************************************************************************************************/
+
+/* Main */
+
+main {
+  grid-area: main;
+  width: 87vw;
+  height: 88vh;
+  gap: 10px;
+
+}
+
+.box_card{
+    width: 21vw;
+    display: grid;
+
+}
+
+.box_card img{
+    width: 21vw;
+    height: 40vh;
+}
+
+/******************************************************************************************************************************************/
+
+/* Footer */
+
+footer {
+  grid-area: footer;
+  background-color: white;
+  display: grid;
+  justify-content: center;
+
+}
+
+
